@@ -85,7 +85,7 @@ else {
   //console.log('Please answer ' + username + '.');
   alert('Please answer ' + username + '.');
 }
-// all questions and code consel.logged out, then changed consel.log to alert and retest4ed code.//
+// all questions and code console.logged out, then changed console.log to alert and retested code.//
 // finally successful for Lab 2 with conditional statements.//
 
 // User question to ask user on site will be "Guess which countries I have already visited? Good luck!" //
