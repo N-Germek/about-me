@@ -87,3 +87,20 @@ else {
 }
 // all questions and code consel.logged out, then changed consel.log to alert and retest4ed code.//
 // finally successful for Lab 2 with conditional statements.//
+
+// User question to ask user on site will be "Guess which countries I have already visited? Good luck!" //
+
+let score = 0;
+score++
+console.log(score);
+
+let guesses = 4;
+do {
+  console.log(`You have ${guesses - 1} guesses remaining.`)
+  guesses--;
+} while (guesses > 0)
+
+  console.log('Sorry, that number is too high');
+}
+
+// Code for  for array with answer to "What countries have I visited?" let FavPlaces = ['Croatia', 'Canada', 'Germany', 'Carribean', 'United States'];
