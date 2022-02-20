@@ -91,16 +91,16 @@ else {
 // User question to ask user on site will be "Guess which countries I have already visited? Good luck!" //
 
 let score = 0;
-score++
+score++;
 console.log(score);
+
+// Lines 99 through 109 on are commented out until I can properly make my code work so I don't mess up what I finally understood of my prior code. //
 
 let guesses = 4;
 do {
-  console.log(`You have ${guesses - 1} guesses remaining.`)
+  console.log(`You have ${guesses - 1} guesses remaining.`);
   guesses--;
-} while (guesses > 0)
+} while (guesses > 0);
 
-  console.log('Sorry, that number is too high');
-}
-
+console.log('Sorry, that number is too high');
 // Code for  for array with answer to "What countries have I visited?" let FavPlaces = ['Croatia', 'Canada', 'Germany', 'Carribean', 'United States'];
