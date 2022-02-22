@@ -84,7 +84,7 @@ let newPeople = prompt('Do I like to meet new people?').toLowerCase();
 if (newPeople === 'yes' || newPeople === 'y') {
   score++;
   //console.log('Of course! New poeple mean new perspectives and things to learn from them!');
-  alert('Of course! New poeple mean new perspectives and things to learn from them!');
+  alert('Of course! New people mean new perspectives and things to learn from them!');
 }
 else if (newPeople === 'no' || newPeople === 'n') {
   //console.log('Sorry, not quite right.');
@@ -110,25 +110,41 @@ let win = false;
 let correctNumber = Math.ceil(Math.random() * 10);
 // Math.random is generating random number as answer and math.ceil tells the random number to round up to the nearest whole number. Math.floor rounds down. adding the * (multiplication) and the 10 tells that it will be between 0 and 10.
 while (guesses && !win) {
-  let userGuess = prompt('I\'m thinking of a number between 1 and 10');
+  //start of my while loop and my code reads as:
+  // while guesses are available up to 4 and win is NOT true.
+  let userGuess = prompt('I\'m thinking of a number.');
+  // prompt the user with an escape character to guess a number between 1 and 10.
   guesses--;
+  // code will calculate one less guess
   userGuess = parseInt(userGuess);
+  // code converts user guesses into a number from a string.
   if (userGuess === correctNumber) {
+    // code runs that if user guesses correct number they will be alerted as below with You got this.
     alert('You got it!');
+    // code will check and evaluate user's guess to the random number chosen
     win === true;
+    // code will add to the score.
     score++;
   }
   else if (userGuess < correctNumber) {
-    alert('Sorry ' + userGuess + ' Too low.');
+    // if users guess is less then the correct number, the alert will respond with "sorry" and the users guess and "too  low"
+    alert('Sorry ' + userGuess + ' too low.');
     alert(`You have ${guesses} guesses remaining.`);
+    // then it will alert the user with how many guesses they have remaining to get it correct.
   }
+  // this will do the same as the above yet it will alert the user that they guessed too high. spelled out it reads see below.
   else if (userGuess > correctNumber) {
-    alert('Sorry ' + userGuess + ' Too high.');
+    // otherwise if the user guess is higher then the correct number
+    alert('Sorry ' + userGuess + ' too high.');
+    // this will alert the user that sorry, their guess is too high.
     alert(`You have ${guesses} guesses remaining.`);
+    // this will then alert the user to how many guesses they have left.
   }
+  // end of the while loop.
 }
-// curly brackets contain executed code that runs while a statement is true.
-// parentheses contain information.
+// random notes helpful to retain meaning: curly brackets contain executed code that runs while a statement is true.
+// random notes helpful to retain meaning: parentheses contain information.
 
-// Code for  for array with answer to "What countries have I visited?" let FavPlaces = ['Croatia', 'Canada', 'Germany', 'Carribean', 'United States'];
+// my initial question that I couldn't get to run properly: Code for  for array with answer to "How many countries have I visited?" let FavPlaces = ['Croatia', 'Canada', 'Germany', 'Carribean', 'United States'];
 alert('Congratulations, you got ' + score + ' correct!');
+// this will alert the user that they have completed the quiz and will provide to them the end score. 
