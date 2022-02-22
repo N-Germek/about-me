@@ -102,7 +102,6 @@ else {
 // side note: word wrap is moving the line of code to the next line. option z.
 //adding one to the score. like math add the score before giving the answer.
 console.log(score);
-alert('Congratulations, you got ' + score + ' correct!');
 
 // Lines 99 through 109 on are commented out until I can properly make my code work so I don't mess up what I finally understood of my prior code. //
 
@@ -128,5 +127,8 @@ while (guesses && !win) {
     alert(`You have ${guesses} guesses remaining.`);
   }
 }
+// curly brackets contain executed code that runs while a statement is true.
+// parentheses contain information.
 
 // Code for  for array with answer to "What countries have I visited?" let FavPlaces = ['Croatia', 'Canada', 'Germany', 'Carribean', 'United States'];
+alert('Congratulations, you got ' + score + ' correct!');
