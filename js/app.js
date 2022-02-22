@@ -112,17 +112,18 @@ let correctNumber = Math.ceil(Math.random() * 10);
 // Math.random is generating random number as answer and math.ceil tells the random number to round up to the nearest whole number. Math.floor rounds down. adding the * (multiplication) and the 10 tells that it will be between 0 and 10.
 while (guesses && !win) {
   let userGuess = prompt('I\'m thinking of a number between 1 and 10');
+  guesses--;
+  userGuess = parseInt(userGuess);
   if (userGuess === correctNumber) {
     alert('You got it!');
-    win = true;
+    win === true;
+    score++;
   }
   else if (userGuess < correctNumber) {
     alert('Sorry ' + userGuess + ' Too low.');
-    guesses--;
     alert(`You have ${guesses} guesses remaining.`);
   }
   else if (userGuess > correctNumber) {
-    guesses--;
     alert('Sorry ' + userGuess + ' Too high.');
     alert(`You have ${guesses} guesses remaining.`);
   }
