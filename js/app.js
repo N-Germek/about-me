@@ -123,6 +123,7 @@ while (guesses && !win) {
     alert('You got it!');
     // code will check and evaluate user's guess to the random number chosen
     win === true;
+    guesses = 0;
     // code will add to the score.
     score++;
   }
@@ -142,9 +143,32 @@ while (guesses && !win) {
   }
   // end of the while loop.
 }
-// random notes helpful to retain meaning: curly brackets contain executed code that runs while a statement is true.
-// random notes helpful to retain meaning: parentheses contain information.
-
 // my initial question that I couldn't get to run properly: Code for  for array with answer to "How many countries have I visited?" let FavPlaces = ['Croatia', 'Canada', 'Germany', 'Carribean', 'United States'];
+
+let tries = 6;
+// six guesses
+let winning = false;
+let placesVisited = ['croatia', 'canada', 'germany', 'carribean', 'united states'];
+// array of places visited with croatia being index zero, canada being index 1 etc.
+while (tries && !winning) {
+  // while user has guesses and they are not winning, prompt user
+  let userCountry = prompt('What is countries have I visited?').toLowerCase();
+  // count down guesses that user gets
+  tries--;
+  // this will check the user answer versus my places visited array by checking each place indivisually based on the position in the array
+  for (let i = 0; i < placesVisited.length; i++) {
+    // creating places as a new variable to equate index to placesVisited
+    let places = placesVisited[i];
+    // this will check the user entry to verify it is one of the indexes listed above
+    if (userCountry === places) {
+      winning === true;
+      tries = 0;
+      alert('You are right!');
+      score++;
+    }
+  }
+}
 alert('Congratulations, you got ' + score + ' correct!');
 // this will alert the user that they have completed the quiz and will provide to them the end score. 
+// random notes helpful to retain meaning: curly brackets contain executed code that runs while a statement is true.
+// random notes helpful to retain meaning: parentheses contain information.
