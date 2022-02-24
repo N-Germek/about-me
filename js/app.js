@@ -92,6 +92,7 @@ else {
 country();
 // 
 
+function newPeople(){
 let newPeople = prompt('Do I like to meet new people?').toLowerCase();
 if (newPeople === 'yes' || newPeople === 'y') {
   score++;
@@ -106,6 +107,8 @@ else {
   //console.log('Please answer ' + username + '.');
   alert('Please answer ' + username + '.');
 }
+}
+newPeople();
 // all questions and code console.logged out, then changed console.log to alert and retested code.//
 // finally successful for Lab 2 with conditional statements.//
 
