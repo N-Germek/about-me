@@ -13,6 +13,7 @@ alert('Hello ' + username) + '!';
 }
 username();
 
+function travel(){
 let travel = prompt('Do I like to travel?').toLowerCase();
 if (travel === 'yes' || travel === 'y') {
   score++;
@@ -27,9 +28,12 @@ else {
   //console.log('Please answer ' + username + '.');
   alert('Please answer ' + username + '.');
 }
+}
+travel();
 
 // first question after adressing user's name //
 
+function pets(){
 let pets = prompt('Do I have pets?').toLowerCase();
 if (pets === 'yes' || pets === 'y') {
   score++;
@@ -44,7 +48,8 @@ else {
   //console.log('Please answer ' + username + '.');
   alert('Please answer ' + username + '.');
 }
-
+}
+pets();
 // second question addressed completed //
 // reminder that after let variable is entered, prompt for user will be made to ask user next question. //
 // console.log will return with the answer to the string based on the username's response. //
