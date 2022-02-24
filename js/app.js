@@ -122,6 +122,8 @@ console.log(score);
 
 let guesses = 4;
 let win = false;
+
+function correctNumber(){
 let correctNumber = Math.ceil(Math.random() * 10);
 // Math.random is generating random number as answer and math.ceil tells the random number to round up to the nearest whole number. Math.floor rounds down. adding the * (multiplication) and the 10 tells that it will be between 0 and 10.
 while (guesses && !win) {
@@ -158,6 +160,8 @@ while (guesses && !win) {
   }
   // end of the while loop.
 }
+}
+correctNumber();
 // my initial question that I couldn't get to run properly: Code for  for array with answer to "How many countries have I visited?" let FavPlaces = ['Croatia', 'Canada', 'Germany', 'Carribean', 'United States'];
 
 let tries = 6;
