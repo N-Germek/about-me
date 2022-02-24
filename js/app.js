@@ -54,6 +54,7 @@ pets();
 // reminder that after let variable is entered, prompt for user will be made to ask user next question. //
 // console.log will return with the answer to the string based on the username's response. //
 
+function adventures(){
 let adventures = prompt('Do I like to go on adventures?').toLowerCase();
 if (adventures === 'yes' || adventures === 'y') {
   score++;
@@ -68,9 +69,11 @@ else {
   //console.log('Well ' + username + 'what is your response?');
   alert('Well ' + username + ' what is your response?');
 }
-
+}
+adventures();
 // third question with new variable declared. same series of results should appear on console log based on response. //
 
+function country(){
 let country = prompt('Have I lived in another country?').toLowerCase();
 if (country === 'yes' || country === 'y') {
   score++;
@@ -85,7 +88,8 @@ else {
   //console.log('Please guess with a yes or no ' + username + '.');
   alert('Please guess with a yes or no ' + username + '.');
 }
-
+}
+country();
 // 
 
 let newPeople = prompt('Do I like to meet new people?').toLowerCase();
