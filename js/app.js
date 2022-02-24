@@ -167,6 +167,8 @@ correctNumber();
 let tries = 6;
 // six guesses
 let winning = false;
+
+function placesVisited(){
 let placesVisited = ['croatia', 'canada', 'germany', 'carribean', 'united states'];
 // array of places visited with croatia being index zero, canada being index 1 etc.
 while (tries && !winning) {
@@ -187,6 +189,9 @@ while (tries && !winning) {
     }
   }
 }
+}
+placesVisited();
+
 alert('Congratulations, you got ' + score + ' correct!');
 // this will alert the user that they have completed the quiz and will provide to them the end score. 
 // random notes helpful to retain meaning: curly brackets contain executed code that runs while a statement is true.
