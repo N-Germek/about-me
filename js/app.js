@@ -7,8 +7,11 @@ let score = 0;
 //console.log('Hello World');
 // console log finally responded with correct messaging. //
 
+function username(){
 let username = prompt('What is your name?');
 alert('Hello ' + username) + '!';
+}
+username();
 
 let travel = prompt('Do I like to travel?').toLowerCase();
 if (travel === 'yes' || travel === 'y') {
